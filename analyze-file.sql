@@ -54,7 +54,6 @@ from
   group by 1
  ) d ;
 
-
 -- the revenue of each product line in all warehouses --
 (select s.warehouseCode as WarehouseCode, s.productLine as ProductLine, format(s.revenue, '#,##.00') as Revenue
 from

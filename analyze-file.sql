@@ -143,7 +143,6 @@ from
 order by 7 
 ;
 
-
 -- top 15 items with the highest inventory-to-sales ratios in the first five months of 2005 --
 select row_number() over (order by round( stock/quantityOrdered,2) desc) as STT, 
  productCode as ProductCode, productLine as ProductLine, 
